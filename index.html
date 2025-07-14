@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一代女王滴雞精 - 女性專屬的滋養</title>
+    <style>
+        /* 全局樣式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+        }
+        
+        body {
+            background-color: #fff8f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* 導航欄 */
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d35400;
+        }
+        
+        /* 英雄區域 */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #d35400;
+            transform: translateY(-3px);
+        }
+        
+        /* 故事區域 */
+        .story-section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #d35400;
+        }
+        
+        .story-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .story-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .story-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .story-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* 產品展示 */
+        .products-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .product-image {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.1);
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .product-desc {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .product-price {
+            font-weight: bold;
+            color: #d35400;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        
+        /* 聯絡區域 */
+        .contact-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .contact-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* 頁腳 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">一代女王滴雞精</div>
+            <div>
+                <a href="#story" class="btn">我們的故事</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 英雄區域 -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div>
+                <h1>女王的滋養</h1>
+                <p>每一滴都是對現代女性無微不至的呵護，精選頂級食材與漢方草本，慢火淬鍊出滋養身心的精華</p>
+                <a href="#products" class="btn">立即選購</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 故事區域 -->
+    <section class="story-section" id="story">
+        <div class="container">
+            <h2 class="section-title">阿嬤的故事</h2>
+            <div class="story-content">
+                <div class="story-text">
+                    <p>在一個小村莊裡，住著一位慈祥的阿嬤，她的手藝在村裡是出了名的。每當村民們生病或感到疲憊時，阿嬤總會用她的秘方煮出一鍋熱騰騰的滴雞精，讓大家感受到溫暖與關懷。</p>
+                    <p>阿嬤的滴雞精不僅味道鮮美，還富含營養。她選用新鮮的土雞，搭配各種天然的草藥，經過長時間的慢火熬煮，將雞肉的精華完全釋放出來。每一滴都是她對家人的愛與祝福。</p>
+                    <p>隨著時間的推移，阿嬤的滴雞精漸漸成為村莊的傳奇。人們不僅在生病時來找她，還會在節慶時特意帶著家人來品嚐。阿嬤總是笑著說：「這不只是滴雞精，更是我對你們的心意。」</p>
+                </div>
+                <div class="story-image">
+                    <img src="your-actual-image-url.jpg" alt="阿嬤在傳統廚房熬煮滴雞精的溫馨畫面">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 產品展示 -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <h2 class="section-title">我們的產品</h2>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/queen-product.jpg" alt="一代女王滴雞精產品包裝，典雅高貴的設計">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">一代女王滴雞精</h3>
+                    <p class="product-desc">專為女性調配，嚴選新鮮土雞與漢方草本，以傳統工法熬製，呵護女性美麗與健康</p>
+                    <p class="product-price">$1,480 元/盒 (10包入)</p>
+                    <a href="#" class="btn">加入購物車</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 聯絡區域 -->
+    <section class="contact-section">
+        <div class="container contact-content">
+            <h2 class="section-title">聯絡我們</h2>
+            <p>有任何問題或想了解更多關於阿嬤的滴雞精的故事，隨時與我們聯繫</p>
+            <a href="mailto:gowork.tw@gmail.com" class="btn">聯絡我們</a>
+        </div>
+    </section>
+    
+    <!-- 頁腳 -->
+    <footer>
+        <div class="container">
+            <p>© 2023 阿嬤的滴雞精 | 傳承的溫暖</p>
+        </div>
+    </footer>
+    
+    <script>
+        // 簡單的動畫效果
+        document.querySelector('.product-card').addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-10px)';
+        });
+        document.querySelector('.product-card').addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+        
+        // 導航平滑滾動
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
